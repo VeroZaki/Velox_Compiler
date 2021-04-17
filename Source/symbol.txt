@@ -1,0 +1,29 @@
+c identifier
+= operator
+9 number
+; delimeter
+b identifier
++ operator
+5 number
+int keyword
+h identifier
+* operator
+if keyword
+( delimeter
+f identifier
+== operator2
+) delimeter
+{ delimeter
+z identifier
+0 number
+} delimeter
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

@@ -1,0 +1,7 @@
+int keyword
+x identifier
+; delimeter
+x identifier
+= operator
+3 number
+; delimeter
