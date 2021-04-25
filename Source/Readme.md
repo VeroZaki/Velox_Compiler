@@ -6,16 +6,16 @@
     - ### **source:**
         - As it contains the source code.
    
-   - ### **prog:**
+    - ### **prog:**
         - As it contains the input program that you will write to insert it to the assembler and then to the compiler.
    
-   - ### **program:**
+    - ### **program:**
         - As it contains the output of the assembler.
    
-   - ### **file:**
+    - ### **file:**
        - As it contains the assembly of the program with it's localization in memory assuming the start is 0000.
        
-   - ### **FinalObjectProgram:**
+    - ### **FinalObjectProgram:**
        - As it contains the last output from the compiler (the final object program)
    
 1. ### **ASCII.txt:**
@@ -40,40 +40,40 @@
 5. ### **FinalObjectProgram.txt:**
    - This file the code saves in it the final object program.
    
-6. **SampleTable.txt:**
+6. ### **SampleTable.txt:**
    - This file the code saves in it the Sample Table test.
    
-7. **Source.cpp:**
+7. ### **Source.cpp:**
    - This is the source code file of the compiler.
    
-8. **FinalObjectProgram.txt: (IMPORTANT)**
+8. ### **FinalObjectProgram.txt: (IMPORTANT)**
    - This file the code saves in it the Symbol Table.
    
-9. **code.txt:**
+9. ### **code.txt:**
    - This file the code saves in it the final object program.
    
-10. **cut.txt:**
+10. ### **cut.txt:**
    - This file contains the lexical analyzer cut of the input program as tokens without labels.
    
-11. **directives.txt:**
+11. ### **directives.txt:**
    - This file contains the reserved list of Assembler Directives.
 
-12. **file.txt: (IMPORTANT)**
+12. ### **file.txt: (IMPORTANT)**
    - As it contains the assembly of the program with it's localization in memory assuming the start is 0000.
    
-13. **test_print.txt:**
+13. ### **test_print.txt:**
    - This file is not, important at all is for the code to print temporarily data to help the model. 
    
-14. **kolo.txt:**
+14. ### **kolo.txt:**
    - This file is for concatinating the assembler directives and the ASCII values.
  
 15. **lexical_CUT2.txt:**
    - This file contains some of the lexical cut the the model print it temporarily.
 
-16. **lexical_analysis.txt:**
+16. ### **lexical_analysis.txt:**
    - This file contains the lexical analysis.
    
-17. **mix.txt:**
+17. ### **mix.txt:**
    - This file contains the categories with all the labels
 
 18. **numbers.txt:**
