@@ -113,5 +113,5 @@
 
 
 # Example:
-![alt text](https://github.com/VeroZaki/Velox_Compiler/blob/master/Source/Example.jpeg/image.jpg?raw=true)
+![alt text](https://github.com/VeroZaki/Velox_Compiler/blob/master/Source/Example.jpeg?raw=true)
 
