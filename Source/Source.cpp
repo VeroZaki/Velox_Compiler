@@ -189,7 +189,7 @@ void assembler() {
 	int x = 0, i = 0, y, g = 0;
 	string arr[100];
 	ifstream myfile, myfile2, myfile3, myfile4, symbolread, ascii, readobject, test, filefinal, kolo, OP, H, S, ISA, LastRead;
-	ofstream out, symbol, object, ObjectProgram, file, test_print, start, FinalObjectProgram, yarab, lastOut;
+	ofstream out, symbol, object, ObjectProgram, file, test_print, start, FinalObjectProgram, ObjectProgram_Making, lastOut;
 	object.open("object_code.txt");
 	out.open("test.txt");
 	symbol.open("SymbolTable.txt");
@@ -637,11 +637,11 @@ void assembler() {
 		}
 	}
 	test_print.close();
-	yarab.open("yarab.txt");
+	ObjectProgram_Making.open("ObjectProgram_Making.txt");
 	H.open("test_print.txt");
 	string astorha;
 	while (H >> astorha) {
-		yarab << astorha << endl;
+		ObjectProgram_Making << astorha << endl;
 	}
 	H.close();
 	test_print.close();
@@ -650,7 +650,7 @@ void assembler() {
 	OP.open("objectprogram.txt");
 	S.open("start.txt");
 	FinalObjectProgram.open("FinalObjectProgram.txt");
-	ISA.open("yarab.txt");
+	ISA.open("ObjectProgram_Making.txt");
 	while (OP >> totalstring) {
 		FinalObjectProgram << totalstring;
 		//FinalObjectProgram << "^" << totalstart;
