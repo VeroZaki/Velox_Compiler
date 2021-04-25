@@ -36,7 +36,7 @@
      - == operator2
      - (, ), {, }, ; as Delimeter
 
-4. ### **DIR.txt:**
+### 4. **DIR.txt:**
    - This file the code saves in it the Assembler Directives.
    
 5. ### **FinalObjectProgram.txt:**
