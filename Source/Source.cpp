@@ -189,7 +189,7 @@ void assembler() {
 	int x = 0, i = 0, y, g = 0;
 	string arr[100];
 	ifstream myfile, myfile2, myfile3, myfile4, symbolread, ascii, readobject, test, filefinal, kolo, OP, H, S, ISA, LastRead;
-	ofstream out, symbol, object, ObjectProgram, file, habal, start, FinalObjectProgram, yarab, lastOut;
+	ofstream out, symbol, object, ObjectProgram, file, test_print, start, FinalObjectProgram, yarab, lastOut;
 	object.open("object_code.txt");
 	out.open("test.txt");
 	symbol.open("SymbolTable.txt");
@@ -475,7 +475,7 @@ void assembler() {
 	string st;
 	filefinal.close();
 	start.open("start.txt");
-	habal.open("habal.txt");
+	test_print.open("test_print.txt");
 	filefinal.open("file.txt");
 	ObjectProgram.open("objectprogram.txt");
 	while (filefinal >> location >> lable3 >> operation >> OP_CODE >> OBJECTCODE) {
@@ -487,7 +487,7 @@ void assembler() {
 	//ObjectProgram.open("C:\\D\\Collage\\Past Years\\Third year\\First Term\\System Programming\\System_Project\\kolo\\objectprogram.txt");
 	st = co;
 	start << "BLANK" << endl;
-	habal << "BLANK" << endl;
+	test_print << "BLANK" << endl;
 	while (filefinal >> location >> lable3 >> operation >> OP_CODE >> OBJECTCODE) {
 		if (operation != "START") {
 			//cout << operation << endl;
@@ -504,15 +504,15 @@ void assembler() {
 							}
 							start << gg + location << endl;
 							ObjectProgram << endl << "T^" << gg + location << "^";
-							habal << endl;
+							test_print << endl;
 						}
 						count = count + 3;
 						//cout << count << endl;
-						habal << OBJECTCODE << "^";
+						test_print << OBJECTCODE << "^";
 						if (count >= 30) {
 							//cout << count << endl;
 							string S = Dec_Hex(count);
-							//habal << OBJECTCODE << "^";
+							//test_print << OBJECTCODE << "^";
 							//cout << to_upper(S) << endl; // hasfarooo
 							ObjectProgram << to_upper(S);
 							//cout << count;
@@ -522,7 +522,7 @@ void assembler() {
 						else {
 
 							flag = count;
-							//habal << endl << "T^";
+							//test_print << endl << "T^";
 						}
 
 					}
@@ -535,7 +535,7 @@ void assembler() {
 								}
 								start << gg + location << endl;
 								ObjectProgram << endl << "T^" << gg + location << "^";
-								habal << endl;
+								test_print << endl;
 							}
 							string KA = OP_CODE;
 							//cout << KA;
@@ -549,11 +549,11 @@ void assembler() {
 									}
 									start << gg + location << endl;
 									ObjectProgram << endl << "T^" << gg + location << "^";
-									habal << endl;
+									test_print << endl;
 								}
 								count = NUM + count;
 
-								habal << OBJECTCODE << "^";
+								test_print << OBJECTCODE << "^";
 								//string S = Dec_Hex(count);
 								//cout << to_upper(S) << endl; // hasfarooo
 								//ObjectProgram << to_upper(S);
@@ -565,10 +565,10 @@ void assembler() {
 							}
 							else {
 								start << location << endl;
-								//habal << endl;
+								//test_print << endl;
 								//cout << count << endl;
 								string S = Dec_Hex(count);
-								//habal << OBJECTCODE << "^";
+								//test_print << OBJECTCODE << "^";
 								//cout << to_upper(S) << endl; // hasfarooo
 								ObjectProgram << to_upper(S);
 								count = 0;
@@ -582,7 +582,7 @@ void assembler() {
 									gg = gg + kk;
 								}
 								start << gg + location;
-								habal << endl;
+								test_print << endl;
 								ObjectProgram << endl << "T^" << gg + location << "^";
 							}
 							if (myriam + count <= 30)
@@ -591,25 +591,25 @@ void assembler() {
 								count = count + myriam;
 								string S = Dec_Hex(myriam);
 								//cout << SUM
-								habal << OBJECTCODE << "^";
+								test_print << OBJECTCODE << "^";
 								//cout << S << endl;
 							}
 							else {
-								//habal << endl;
+								//test_print << endl;
 								string S = Dec_Hex(count);
-								//habal << OBJECTCODE << "^";
+								//test_print << OBJECTCODE << "^";
 								//cout << to_upper(S) << endl; // hasfarooo
 								ObjectProgram << to_upper(S);
 								count = 0;
 								ObjectProgram << endl << "T^";
-								habal << endl;
+								test_print << endl;
 							}
 						}
 						else if (operation == "END") {
 							if (count != 0)
 							{
 								string S = Dec_Hex(count);
-								//habal << OBJECTCODE << "^";
+								//test_print << OBJECTCODE << "^";
 								//cout << to_upper(S) << endl; // hasfarooo
 								ObjectProgram << to_upper(S);
 								//count = 0;
@@ -636,15 +636,15 @@ void assembler() {
 
 		}
 	}
-	habal.close();
+	test_print.close();
 	yarab.open("yarab.txt");
-	H.open("habal.txt");
+	H.open("test_print.txt");
 	string astorha;
 	while (H >> astorha) {
 		yarab << astorha << endl;
 	}
 	H.close();
-	habal.close();
+	test_print.close();
 	ObjectProgram.close();
 	start.close();
 	OP.open("objectprogram.txt");
