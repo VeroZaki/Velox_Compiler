@@ -18,6 +18,8 @@
     - ### **FinalObjectProgram:**
        - As it contains the last output from the compiler (the final object program)
    
+# Each file with it's explanation:
+   
 1. ### **ASCII.txt:**
    - This file contains the ASCII values of English letters and some symboles needed for the project.
 
