@@ -3,28 +3,28 @@
 ## **Notes:**
   - You can negligt understanding all the file as they are only helper for the assembler and the compliler to work.
   - The important files are:
-    - **source:**
+    - ### **source:**
         - As it contains the source code.
    
-   - **prog:**
+   - ### **prog:**
         - As it contains the input program that you will write to insert it to the assembler and then to the compiler.
    
-   - **program:**
+   - ### **program:**
         - As it contains the output of the assembler.
    
-   - **file:**
+   - ### **file:**
        - As it contains the assembly of the program with it's localization in memory assuming the start is 0000.
        
-   - **FinalObjectProgram:**
+   - ### **FinalObjectProgram:**
        - As it contains the last output from the compiler (the final object program)
    
-1. **ASCII.txt:**
+1. ### **ASCII.txt:**
    - This file contains the ASCII values of English letters and some symboles needed for the project.
 
-2. **Ass.txt:**
+2. ### **Ass.txt:**
    - This file contains each Mneomonic and is's opcode foe the SIC machine.
    
-3. **CUT2.txt:**
+3. ### **CUT2.txt:**
    - This file contains the lexical analyzer cut of the input program as tokens and label it with it's category
    - Example: 
      - a-z and A-Z as Identifier
@@ -34,10 +34,10 @@
      - == operator2
      - (, ), {, }, ; as Delimeter
 
-4. **DIR.txt:**
+4. ### **DIR.txt:**
    - This file the code saves in it the Assembler Directives.
    
-5. **FinalObjectProgram.txt:**
+5. ### **FinalObjectProgram.txt:**
    - This file the code saves in it the final object program.
    
 6. **SampleTable.txt:**
