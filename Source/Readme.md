@@ -1,6 +1,6 @@
-**# Instructions about using the files with the project**
+#**Instructions about using the files with the project**
 
-**## Notes:**
+##**Notes:**
   - You can negligt understanding all the file as they are only helper for the assembler and the compliler to work.
   - The important files are:
     - **source:**
